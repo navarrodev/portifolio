@@ -6,327 +6,125 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Document</title>
+<link rel="stylesheet" type="text/css" href="index.css"
 </head>
-
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Alegreya&display=swap');
-.white{
-	color: white;
-}
-*{
-	list-style: none;
-    text-decoration: none;
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: 'Nunito', sans-serif;
-}
-
-body{
-		background-image: url("https://cdn.pixabay.com/photo/2016/04/12/22/35/watercolour-1325656_960_720.jpg");
-		background-repeat: no-repeat;
-		background-size: cover;
-}
-
-.wrapper .sidebar{
-	background: #455A64;
-	position: fixed;
-	top: 0;
-	left: -225px;
-	width: 225px;
-	height: 100%;
-	padding: 20px 0;
-	transition: all 0.5s ease;
-}
-
-.wrapper .sidebar .profile{
-	margin-bottom: 30px;
-	text-align: center;
-}
-
-.wrapper .sidebar .profile img{
-	display: block;
-	width: 100px;
-	height: 100px;
-    border-radius: 20%;
-	margin: 0 auto;
-}
-
-.wrapper .sidebar .profile h3{
-	color: #ffffff;
-	margin: 10px 0 5px;
-}
-
-.wrapper .sidebar .profile p{
-	color: rgb(206, 240, 253);
-	font-size: 14px;
-}
-
-.wrapper .sidebar ul li a{
-	display: block;
-	padding: 13px 30px;
-	border-bottom: 1px solid #455A64;
-	color: rgb(241, 237, 237);
-	font-size: 16px;
-	position: relative;
-}
-
-.wrapper .sidebar ul li a .icon{
-	color: #dee4ec;
-	width: 30px;
-	display: inline-block;
-}
-
- 
-
-.wrapper .sidebar ul li a:hover,
-.wrapper .sidebar ul li a.active{
-	color: #455A64; 
-
-	background:white;
-    border-right: 2px solid rgb(5, 68, 104);
-}
-
-.wrapper .sidebar ul li a:hover .icon,
-.wrapper .sidebar ul li a.active .icon{
-	color: #455A64;
-}
-
-.wrapper .sidebar ul li a:hover:before,
-.wrapper .sidebar ul li a.active:before{
-	display: block;
-}
-
-.wrapper .section{
-	width: calc(100% - 225px);
-	margin-left: 0;
-	transition: all 0.5s ease;
-}
-
-.wrapper .section .top_navbar{
-	background: #455A64; 
-	height: 50px;
-	width: 150%;
-	display: flex;
-	align-items: center;
-	padding: 0 30px;
- 
-}
-
-.wrapper .section .top_navbar .hamburger a{
-	font-size: 28px;
-	color: #f4fbff;
-}
-
-.wrapper .section .top_navbar .hamburger a:hover{
-	color: #a2ecff;
-}
-
- .wrapper .section .container{
-  margin: 30px;
-	background: #455A64;
-	padding: 50px;
-  justify-content: center;
-  align-content: center;      
-	line-height: 28px;
-}
-
- .wrapper .section .container2{
-  margin: 30px;
-	background: #455A64;
-	padding: 50px;
-  justify-content: center;
-  align-content: center;      
-	line-height: 28px;
-}
-
-
-body.active .wrapper .sidebar{
-	left: 0;
-}
-
-body.active .wrapper .section{
-	margin-left: 225px;
-	width: 70%;
-}
-</style>
-	<div class="wrapper">
-	<div class="section">
-	<div class="top_navbar">
-	<div class="hamburger">
-	<a href="#">
-		<i class="fas fa-bars"></i>
-	</a>
+<div class="wrapper">
+<div class="section">
+<div class="top_navbar">
+<div class="hamburger">
+<a href="#">
+<i class="fas fa-bars"></i>
+</a>
 </div>
 
 <div class="sidebar">
-	<div class="profile">
-	<img src="https://navarrodev.github.io/perfil/assets/images/profile.jpg" alt="profile_picture">
-	<h3>Johnny Navarro</h3>
-		<p>Desenvolvedor</p>
-</div>
-	<ul>
-		<li>
-			<a href="#" class="active">
-				<span class="icon"><i class="fas fa-home"></i></span>
-				<span class="item">Home</span>
-			</a>
-		</li>
-		
-		<li>
-			<a href="#">
-				<span class="icon"><i class="fas fa-desktop"></i></span>
-				<span class="item">Dashboard</span>
-			</a>
-		</li>
+<div class="profile">
+<img src="https://navarrodev.github.io/perfil/assets/images/profile.jpg" alt="profile_picture">
+<h3>Johnny Navarro</h3>
+                <p>Designer</p>
+            </div>
+            <ul>
+                <li>
+                    <a href="#" class="active">
+                        <span class="icon"><i class="fas fa-home"></i></span>
+                        <span class="item">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-desktop"></i></span>
+                        <span class="item">My Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-user-friends"></i></span>
+                        <span class="item">People</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-tachometer-alt"></i></span>
+                        <span class="item">Perfomance</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-database"></i></span>
+                        <span class="item">Development</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-chart-line"></i></span>
+                        <span class="item">Reports</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-user-shield"></i></span>
+                       <span class="item">Admin</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-cog"></i></span>
+                        <span class="item">Settings</span>
+                    </a>
+                </li>
 
-		<li>
-			<a href="#">
-				<span class="icon"><i class="fas fa-tachometer-alt"></i></span>
-				<span class="item">Perfomance</span>
-			</a>
-		</li>
-		
-		<li>
-			<a href="#">
-				<span class="icon"><i class="fas fa-laptop-code"></i></span>
-				<span class="item">Projetos</span>
-			</a>
-		</li>
-		
-		<li>
-			<a href="#">
-				<span class="icon"><i class="fas fa-chart-line"></i></span>
-				<span class="item">DataView</span>
-			</a>
-		</li>
-
-		<li>
-			<a href="#">
-				<span class="icon"><i class="fas fa-id-card"></i></span>
-				<span class="item">Contatos</span>
-			</a>
-	
-		</li>
-		</ul>
-</div>
-
-
-<div class="container2">
-	<p class="white">
-Com mais de 15 anos de experiência com Linux e desenvolvimento, penso que tenho um pouco de experiência detalhista, curioso e competitivo,sempre buscando qualidade nos resultados. Antes de qualquer coisa me considero um solucionador de problemas.
-Aqui você pode ver um pouco do meu trabalho, alguns artigos na tentativa de compartilhar o "muito que eu li o pouco que eu sei." como diria o poeta.
-	</p>
-</div>
-
+            </ul>
+        </div>
+        
+    </div>
+		<div>			
+<!--Aqui vão as barras-->
 <div class="container2">	
-	<p class="white">Hablidades&Conhecimento</p>
-	
-	<link rel="stylesheet" type="text/css" href="index.css">
+<p class="white">Hablidades&Conhecimento</p>
+      <link rel="stylesheet" type="text/css" href="index.css">
 
-	<div class="skill" data-proficiency="95"> 
+      <div class="skill" data-proficiency="95"> 
 
-	<div class="skill-info">
-		<p class="white" class="skill-name">Linux-ShellScript</p>
-		<p class="skill-percentage">
-	<span class="countup"></span>
+        <div class="skill-info">
+          <p class="white" class="skill-name">Linux/Windows</p>
 
-	<script src="intersection-observer.js"></script>
-	<script src="index.js"></script>%
-	</p>
+          <p class="skill-percentage">
+            <span class="countup"></span>
+            <script src="intersection-observer.js"></script>
+            <script src="index.js"></script>%
+          </p>
+        </div>
 
-</div>
+        <div class="skill-bar-container">
+          <div class="skill-bar"></div>
+        </div>
+      </div>
+    
+    <div class="skill" data-proficiency="70">
+  
+      <div class="skill-info">
+        <p class="white" class="skill-name">Python/Django</p>
 
-<div class="skill-bar-container">
-<div class="skill-bar"></div>
+        <p class="skill-percentage">
+          <span class="countup"></span>
+          <script src="intersection-observer.js"></script>
+          <script src="index.js"></script>%
+        </p>
+      </div>
 
-</div>
-	<p class="white"> +15 anos de Experiência</p>
-</div>
+      <div class="skill-bar-container">
+        <div class="skill-bar"></div>
+      </div>
+    </div>	
 
-<div class="skill" data-proficiency="80">
 
-<div class="skill-info">
-	<p class="white" class="skill-name">Python/Django</p>
 
-	<p class="skill-percentage">
-	<span class="countup"></span>
-	<script src="intersection-observer.js"></script>
-	<script src="index.js"></script>%
-	</p>
-</div>
-
-	<div class="skill-bar-container">
-	<div class="skill-bar"></div>
-	</div>
-		<p class="white"> 5 anos de Experiência</p>
-	</div>	
-
-<div class="skill" data-proficiency="75"> <!--Aqui começa-->
-
-	<div class="skill-info">
-		<p class="white" class="skill-name">JScript/Node.js</p>
-
-		<p class="skill-percentage">
-	<span class="countup"></span>
-	<script src="intersection-observer.js"></script>
-	<script src="index.js"></script>%
-		</p>
-	</div>
-
-	<div class="skill-bar-container"></div>
-	<div class="skill-bar"></div>
-
-	<p class="white"> 2 anos de Experiência</p>
-
-</div>	
-
-<div class="skill" data-proficiency="70"> <!--Aqui começa-->
-
-	<div class="skill-info">
-		<p class="white" class="skill-name">HTML5/CSS</p>
-
-		<p class="skill-percentage">
-		<span class="countup"></span>
-		<script src="intersection-observer.js"></script>
-		<script src="index.js"></script>%
-		</p>
-	</div>
-
-	<div class="skill-bar-container">
-	<div class="skill-bar"></div>
-	</div>
-		<p class="white"> 8 anos de Experiência</p>
-
-</div>	
-
-	<div class="skill" data-proficiency="70"> <!--Aqui começa-->
-
-	<div class="skill-info">
-		<p class="white" class="skill-name">SQL/NoSQL</p>
-
-		<p class="skill-percentage">
-		<span class="countup"></span>
-		<script src="intersection-observer.js"></script>
-		<script src="index.js"></script>%
-		</p>
-</div>
-
-	<div class="skill-bar-container">
-	<div class="skill-bar"></div>
-	</div>
-		<p class="white"> 2 anos de Experiência</p>
-	
-
-</div>	
-
-</div>	
 
 </body>
-<script>
-var hamburger = document.querySelector(".hamburger");
-hamburger.addEventListener("click", function(){
-document.querySelector("body").classList.toggle("active");
-})
-</script>
+	 <script>
+         var hamburger = document.querySelector(".hamburger");
+	hamburger.addEventListener("click", function(){
+		document.querySelector("body").classList.toggle("active");
+	})
+    </script>
 </html>

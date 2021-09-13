@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@600&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -123,11 +124,11 @@
   background-color: black
 }
 
-<<<<<<< HEAD
+
 .barras p {
   color: #00BFFF;
   text-shadow: 0.1rem 0.1rem 1.8rem #fff, 0.1rem 0.1rem 2rem #0ff;
-=======
+
 .barras p{
 	color: #00BFFF;
 
@@ -210,13 +211,13 @@
   text-shadow: 0 0 5px #0ff, 2px 2px 25px #fff;
 }
 
-<<<<<<< HEAD
+
 menu-link:focus {
   border: none
-=======
+
 .menu-link{
 	font-family:'Josefin Slab', serif;
 	font-size: 2rem;
 	color: #00BBFF;
->>>>>>> ffffbdee1acb0b9e0240062818452866e6272d40
+
 }

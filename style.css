@@ -1,173 +1,136 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@600&display=swap');
+@import url('data:application/octet-stream;base64,QGZvbnQtZmFjZSB7CiAgZm9udC1mYW1pbHk6ICdKb3NlZmluIFNsYWInOwogIGZvbnQtc3R5bGU6IG5vcm1hbDsKICBmb250LXdlaWdodDogNjAwOwogIGZvbnQtZGlzcGxheTogc3dhcDsKICBzcmM6IHVybChodHRwczovL2ZvbnRzLmdzdGF0aWMuY29tL3Mvam9zZWZpbnNsYWIvdjEzL2xXLXN3andPSzNQczVHU0psTk5rTWFsTnBpWmVfbGRiT1I0Vzc0ZXJkM2sudHRmKSBmb3JtYXQoJ3RydWV0eXBlJyk7Cn0K');
 
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
 
-
- *{
- 	margin: 0;
- 	padding: 0;
- 	list-style: none;
- 	text-decoration: none;
- }
-
-.hamburger{
-	/**background-color: red;**/
-	width: 2rem;
-	height: 2rem;
-	position: absolute;
-	z-index: 100;
-	left: 13%;
-	top: 17%;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-	cursor: pointer;
+.hamburger {
+  /**background-color: red;**/
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  z-index: 100;
+  left: 13%;
+  top: 19%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  cursor: pointer;
 }
 
 .show-menu .hamburguer {
   right: 16rem;
 }
 
-.line{
-	width: 100%;
-	background-color: #00BBFF;
-	height: .1rem;
-	box-shadow: 0.1rem 0.1rem 1px #000
-
+.line {
+  width: 100%;
+  background-color: #00BBFF;
+  height: .1rem;
+  box-shadow: 0.1rem 0.1rem 1px #0ff;
 }
 
-
- .header{
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
-	position: relative;
-}
-
-.banner{
-	position: absolute;
-	top: 14%;
-	left: 17%;
-
-}
-
-
-.banner h1{
-	color: #00BFFF;
-	font-size: 3.5rem;
-	font-weight: 350;
-	text-shadow: 0.3rem 0.4rem 2px rgba(0, 0, 0, 0.4);
-	opacity: 0;
-	animation: mov 4s forwards;
-	font-family: 'Josefin Slab', serif;
-
-}
-
-.banner h1:hover{
-	color: #5892a7 ;
-}
-
-
-
-.banner button{
-	top: 1em;
-	left: 1em;
-	background-color: Transparent;
-  background-repeat:no-repeat;
-  border: none;
-  cursor:pointer;
+.header {
+  width: 100%;
+  height: 100%;
   overflow: hidden;
   position: relative;
-
 }
 
-button:focus {
-    border: none;
+.banner {
+  position: absolute;
+  top: 16%;
+  left: 22%;
+}
+
+.banner h1 {
+  color: #00BFFF;
+  text-shadow: 0.1rem 0.1rem 3rem #fff, 0.1rem 0.1rem 1.5rem #0ff;
+  font-size: 3.5rem;
+  font-weight: 350;
+  opacity: 0;
+  animation: mov 4s forwards;
+  font-family: 'Josefin Slab', serif;
 }
 
 
 @media screen and (max-width: 768px) {
+  .banner h1 {
+    font-size: 2em;
+    left: 22%;
+  }
 
-.banner h1{
-	font-size: 2em;
-	
+  .banner .barras {
+    left: 11%;
+  }
 }
 
-.banner .barras{
-	left: 11%;
-}
-
-	}
-@media screen and (max-width: 768px){
-	.hamburger{
-		left: 10%;
+@media screen and (max-width: 768px) {
+  .hamburger {
+    left: 10%;
     top: 15.5vh;
-	}
-
-
+  }
 }
 
 @keyframes mov {
-	0%{
-		transform: translateY(10rem) rotateY(-20deg);
-	}
+  0% {
+    transform: translateY(10rem) rotateY(-20deg);
+  }
 
-	100%{
-		transform: translateY(0) rotateY(0);
-		opacity: 1;
-	}
+  100% {
+    transform: translateY(0) rotateY(0);
+    opacity: 1;
+  }
 }
 
-.img-wrapper{
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
-	background-color: rgba(0, 0, 0, 0.8);
-
+.img-wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
-.img-wrapper img{
-	width: 100%;
-	height: 100vh;
-	object-fit: cover;
-	opacity: 20%;
-	animation: zoom 10s;
-	overflow: hidden;
-
+.img-wrapper img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  opacity: 25%;
+  animation: zoom 10s;
+  overflow: hidden;
 }
-
 
 @keyframes zoom {
-	0%{
-		transform: scale(1.3);
-	}
+  0% {
+    transform: scale(1.3);
+  }
 
-	100%{
-		transform: scale(1);
-	}
+  100% {
+    transform: scale(1);
+  }
 }
-
-
-
 
 /** Aqui as barras**/
+* TODO: * //
 
-.barras{
-	left: 22%;
-	width: 100%;
-	/**height: 100vh;**/
-	object-fit: cover;
-	overflow: hidden;
-	position: relative;
-	
+.banner .barras {
+  /* left: 22%;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  overflow: hidden;
+  position: relative; */
+  background-color: black
 }
 
-.barras p{
-	color: #00bbff;
+.barras p {
+  color: #00BFFF;
+  text-shadow: 0.1rem 0.1rem 1.8rem #fff, 0.1rem 0.1rem 2rem #0ff;
 }
-
 
 .skill {
-  margin:30px 0;
+  margin: 30px 0;
 }
 
 .skill-info {
@@ -175,18 +138,17 @@ button:focus {
   justify-content: space-between;
   font-size: 1.2rem;
   line-height: 1.5;
-  
- }
+}
 
 .skill-percentage {
-  opacity: 0; 
+  opacity: 0;
   transition: opacity 0.6s;
- }
+}
 
 .skill-bar-container {
   position: relative;
   width: 100%;
-  height: 15px; 
+  height: 15px;
   background-color: #363636;
   overflow: hidden;
 }
@@ -196,41 +158,54 @@ button:focus {
   top: 0;
   left: 0;
   height: 100%;
-  width: 0; 
-  background-color: #34e8d7; 
+  width: 0;
+  background-color: #34e8d7;
   transition: width 3s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-.sidebar{
-	width: 19rem;
-	height: 100vh;
-	background-color: #fff;
-	position:fixed;
-	top: 0;
-	right: -20rem;
-	transition: all 1s;
-	z-index: 80;
+.sidebar {
+  width: 19rem;
+  height: 100vh;
+  background-color: #000000;
+  opacity: 80%;
+  position: fixed;
+  top: 0;
+  right: -20rem;
+  transition: all 1s;
+  z-index: 80;
 }
 
 .show-menu .sidebar {
   right: 0;
 }
 
-
-.menu{
-	position: absolute;
-	top: 20%;
-	left: 20%;
-	transform: translate(50%, 50%);
+.menu {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  transform: translate(50%, 50%);
 }
 
-.menu-item{
-	text-align: center;
-	margin-bottom: .5rem;
+.menu-item {
+  text-align: center;
+  margin-bottom: .5rem;
 }
 
-.menu-link{
-	font-family:'Josefin Slab', serif;
-	font-size: 2rem;
-	color: #00BBFF;
+.menu-link {
+  display: flex;
+  justify-content: space-envely;
+  font-family: 'Josefin Slab', serif;
+  font-size: 2rem;
+  color: #00BFFF;
+  border: none;
+
+}
+
+.menu-link:hover {
+  border: none;
+  text-shadow: 0 0 5px #0ff, 2px 2px 25px #fff;
+}
+
+menu-link:focus {
+  border: none
 }

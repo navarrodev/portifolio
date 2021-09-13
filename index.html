@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<meta charset="UTF-8">
@@ -7,6 +8,7 @@
 	<script src="intersection-observer.js"></script>
 	<title>Document</title>
 </head>
+
 <body>
 	<div class="container">
 
@@ -15,82 +17,82 @@
 			<div class="line" id="line2"></div>
 			<div class="line" id="line3"></div>
 		</div>
-		
+
 
 		<header>
-			
+
 			<div class="img-wrapper">
-				
+
 				<img src="imagens/bg.jpg" alt="">
 			</div>
 
 			<div class="banner">
-				
-				<button>
+
+
 					<h1>
-					
-					Developer FullStack
-				
+
+						Dev FullStack
+
 					</h1>
-				</button>
+
 
 				<div class="barras">
 
 
-					<div class="skill" data-proficiency="95"> 
+					<div class="skill" data-proficiency="95">
 
-					<div class="skill-info">
-						<p class="skill-name">SysAdmin/DevOps</p>
+						<div class="skill-info">
+							<p class="skill-name">SysAdmin/DevOps</p>
 
-						<p class="skill-percentage">
-							<span class="countup"></span>
-							<script src="index.js"></script>%
-						</p>
+							<p class="skill-percentage">
+								<span class="countup"></span>
+								<script src="index.js"></script>%
+							</p>
+						</div>
+
+
+						<div class="skill-bar-container">
+							<div class="skill-bar"></div>
+						</div>
+
+						<p><i>15 anos de Experiência</i></p>
 					</div>
 
 
-					<div class="skill-bar-container">
-						<div class="skill-bar"></div>
-					</div>
+					<div class="skill" data-proficiency="70">
 
-						<p><i>+15 anos de Experiência</i></p>
-					</div>
+						<div class="skill-info">
+							<p class="skill-name">Dev-Python-JScript</p>
 
+							<p class="skill-percentage">
+								<span class="countup"></span>
+								<script src="index.js"></script>%
+							</p>
+						</div>
 
-					<div class="skill" data-proficiency="70"> 
-
-					<div class="skill-info">
-						<p class="skill-name">Dev-Python-JScript</p>
-
-						<p class="skill-percentage">
-							<span class="countup"></span>
-							<script src="index.js"></script>%
-						</p>
-					</div>
-
-					<div class="skill-bar-container">
-						<div class="skill-bar"></div>
-					</div>
+						<div class="skill-bar-container">
+							<div class="skill-bar"></div>
+						</div>
 						<p><i>8-3 anos de Experiência</i></p>
 					</div>
 
 
-					<div class="skill" data-proficiency="70"> 
+					<div class="skill" data-proficiency="70">
 
-					<div class="skill-info">
-						<p class="skill-name">GCP/AWS</p>
+						<div class="skill-info">
+							<p class="skill-name">GCP/AWS</p>
 
-						<p class="skill-percentage">
-							<span class="countup"></span>
-							<script src="index.js"></script>%
-						</p>
-					</div>
+							<p class="skill-percentage">
+								<span class="countup"></span>
+								<script src="index.js"></script>%
+							</p>
+						</div>
 
-					<div class="skill-bar-container">
-						<div class="skill-bar"></div>
-					</div>
+						<div class="skill-bar-container">
+							<div class="skill-bar"></div>
+						</div>
 						<p><i>5 anos de Experiência</i></p>
-					</div>	
+					</div>
 
 				</div>
 			</div>
@@ -101,10 +103,10 @@
 		<div class="sidebar">
 			<nav>
 				<ul class="menu">
-					<li class="menu-item"><a href="#" class="menu-link">home</a></li>
-					<li class="menu-item"><a href="#" class="menu-link">Skills</a></li>
-					<li class="menu-item"><a href="#" class="menu-link">Projetos</a></li>
+					<li class="menu-item"><a href="#" class="menu-link">Home</a></li>
 					<li class="menu-item"><a href="#" class="menu-link">Artigos</a></li>
+					<li class="menu-item"><a href="#" class="menu-link">Projetos</a></li>
+					<li class="menu-item"><a href="#" class="menu-link">Skills</a></li>
 					<li class="menu-item"><a href="#" class="menu-link">Contato</a></li>
 				</ul>
 			</nav>
@@ -115,11 +117,11 @@
 </body>
 
 
- <script>
-	    var hamburger = document.querySelector(".hamburger");
-		hamburger.addEventListener("click", function(){
-			document.querySelector(".container").classList.toggle("show-menu");
-		})
+<script>
+	var hamburger = document.querySelector(".hamburger");
+	hamburger.addEventListener("click", function() {
+		document.querySelector(".container").classList.toggle("show-menu");
+	})
 </script>
 
 </html>

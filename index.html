@@ -9,6 +9,14 @@
 </head>
 <body>
 	<div class="container">
+
+		<div class="hamburger">
+			<div class="line" id="line1"></div>
+			<div class="line" id="line2"></div>
+			<div class="line" id="line3"></div>
+		</div>
+		
+
 		<header>
 			
 			<div class="img-wrapper">
@@ -90,9 +98,28 @@
 
 
 		</header>
-		
+		<div class="sidebar">
+			<nav>
+				<ul class="menu">
+					<li class="menu-item"><a href="#" class="menu-link">home</a></li>
+					<li class="menu-item"><a href="#" class="menu-link">Skills</a></li>
+					<li class="menu-item"><a href="#" class="menu-link">Projetos</a></li>
+					<li class="menu-item"><a href="#" class="menu-link">Artigos</a></li>
+					<li class="menu-item"><a href="#" class="menu-link">Contato</a></li>
+				</ul>
+			</nav>
+		</div>
 
 	</div>
 
 </body>
+
+
+ <script>
+	    var hamburger = document.querySelector(".hamburger");
+		hamburger.addEventListener("click", function(){
+			document.querySelector(".container").classList.toggle("show-menu");
+		})
+</script>
+
 </html>

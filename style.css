@@ -5,7 +5,36 @@
  *{
  	margin: 0;
  	padding: 0;
+ 	list-style: none;
+ 	text-decoration: none;
  }
+
+.hamburger{
+	/**background-color: red;**/
+	width: 2rem;
+	height: 2rem;
+	position: absolute;
+	z-index: 100;
+	left: 13%;
+	top: 17%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	cursor: pointer;
+}
+
+.show-menu .hamburguer {
+  right: 16rem;
+}
+
+.line{
+	width: 100%;
+	background-color: #00BBFF;
+	height: .1rem;
+	box-shadow: 0.1rem 0.1rem 1px #000
+
+}
+
 
  .header{
 	width: 100%;
@@ -68,7 +97,14 @@ button:focus {
 }
 
 	}
+@media screen and (max-width: 768px){
+	.hamburger{
+		left: 10%;
+    top: 15.5vh;
+	}
 
+
+}
 
 @keyframes mov {
 	0%{
@@ -126,7 +162,7 @@ button:focus {
 }
 
 .barras p{
-	color: white;
+	color: #00bbff;
 }
 
 
@@ -137,7 +173,7 @@ button:focus {
 .skill-info {
   display: flex;
   justify-content: space-between;
-  font-size: 16px;
+  font-size: 1.2rem;
   line-height: 1.5;
   
  }
@@ -163,4 +199,38 @@ button:focus {
   width: 0; 
   background-color: #34e8d7; 
   transition: width 3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.sidebar{
+	width: 19rem;
+	height: 100vh;
+	background-color: #fff;
+	position:fixed;
+	top: 0;
+	right: -20rem;
+	transition: all 1s;
+	z-index: 80;
+}
+
+.show-menu .sidebar {
+  right: 0;
+}
+
+
+.menu{
+	position: absolute;
+	top: 20%;
+	left: 20%;
+	transform: translate(50%, 50%);
+}
+
+.menu-item{
+	text-align: center;
+	margin-bottom: .5rem;
+}
+
+.menu-link{
+	font-family:'Josefin Slab', serif;
+	font-size: 2rem;
+	color: #00BBFF;
 }

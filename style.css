@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@600&display=swap');
 
-
 * {
   margin: 0;
   padding: 0;
@@ -113,7 +112,6 @@
 }
 
 /** Aqui as barras**/
-* TODO: * //
 
 .banner .barras {
   /* left: 22%;
@@ -129,8 +127,7 @@
   color: #00BFFF;
   text-shadow: 0.1rem 0.1rem 1.8rem #fff, 0.1rem 0.1rem 2rem #0ff;
 }
-
-.skill {
+.skill{
   margin: 30px 0;
 }
 
@@ -209,4 +206,10 @@
 
 menu-link:focus {
   border: none
+}
+
+.menu-link{
+	font-family:'Josefin Slab', serif;
+	font-size: 2rem;
+	color: #00BBFF;
 }

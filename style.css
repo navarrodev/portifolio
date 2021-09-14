@@ -14,7 +14,7 @@
   position: absolute;
   z-index: 100;
   left: 13%;
-  top: 19%;
+  top: 12%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -41,20 +41,43 @@
 
 .banner {
   position: absolute;
-  top: 16%;
+  top: 11%;
   left: 22%;
 }
 
 .banner h1 {
   color: #00BFFF;
-  text-shadow: 0.1rem 0.1rem 3rem #fff, 0.1rem 0.1rem 1.5rem #0ff;
   font-size: 3.5rem;
   font-weight: 350;
-  opacity: 0;
-  animation: mov 4s forwards;
+  animation: tilling 0.1s infinite alternate;
   font-family: 'Josefin Slab', serif;
 }
+@keyframes tilling {
+  /* 0%, 2%, 4%, 6%, 8%, 10%, 12%, 14%, 16%, 18%, 20%, 22%, 24%, 26%, 28%, 30% { */
+1.5%, 2%, 5%, 5.5%; {
+    text-shadow:
+   0 1px 1px #000,
+   0  3px #0ff,
+   0 1px 1px #000,
+   0 0 3px #0ff,
+   0 1px 1px #000,
+   0 0 8px #0ff,
+   0 1px 1px #000,
+   0 0 5px #0ff;
+    }
 
+  32%, 34%, 36%, 38%, 40%, 42%, 44%, 46%, 48%{
+    text-shadow:
+      0 1px 5px #0ff,
+      0 0 1px #000,
+      0 1px 3px #0ff,
+      0 0 1px #000,
+      0 1px 8px #0ff,
+      0 0 1px #000,
+      0 1px 3px #0ff,
+      0 0 1px #000;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .banner h1 {
@@ -70,7 +93,7 @@
 @media screen and (max-width: 768px) {
   .hamburger {
     left: 10%;
-    top: 15.5vh;
+    top: 10.5vh;
   }
 }
 
@@ -116,15 +139,16 @@
 .banner .barras {
   left: 22%;
   width: 100%;
-  height: 100vh;
+  height: 78vh;
   object-fit: cover;
   overflow: hidden;
-  position: relative; 
+  position: relative;
 }
 
 .barras p {
   color: #00BFFF;
   text-shadow: 0.1rem 0.1rem 1.8rem #fff, 0.1rem 0.1rem 2rem #0ff;
+
 }
 .skill{
   margin: 30px 0;
@@ -178,7 +202,7 @@
 
 .menu {
   position: absolute;
-  top: 20%;
+  /* top: 20%; */
   left: 20%;
   transform: translate(50%, 50%);
 }

@@ -1,4 +1,5 @@
-@import url('data:application/octet-stream;base64,QGZvbnQtZmFjZSB7CiAgZm9udC1mYW1pbHk6ICdKb3NlZmluIFNsYWInOwogIGZvbnQtc3R5bGU6IG5vcm1hbDsKICBmb250LXdlaWdodDogNjAwOwogIGZvbnQtZGlzcGxheTogc3dhcDsKICBzcmM6IHVybChodHRwczovL2ZvbnRzLmdzdGF0aWMuY29tL3Mvam9zZWZpbnNsYWIvdjEzL2xXLXN3andPSzNQczVHU0psTk5rTWFsTnBpWmVfbGRiT1I0Vzc0ZXJkM2sudHRmKSBmb3JtYXQoJ3RydWV0eXBlJyk7Cn0K');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@600&display=swap');
+
 
 * {
   margin: 0;
@@ -124,14 +125,9 @@
   background-color: black
 }
 
-<<<<<<< HEAD
 .barras p {
   color: #00BFFF;
   text-shadow: 0.1rem 0.1rem 1.8rem #fff, 0.1rem 0.1rem 2rem #0ff;
-=======
-.barras p{
-	color: #00BFFF;
->>>>>>> ffffbdee1acb0b9e0240062818452866e6272d40
 }
 
 .skill {
@@ -211,13 +207,6 @@
   text-shadow: 0 0 5px #0ff, 2px 2px 25px #fff;
 }
 
-<<<<<<< HEAD
 menu-link:focus {
   border: none
-=======
-.menu-link{
-	font-family:'Josefin Slab', serif;
-	font-size: 2rem;
-	color: #00BBFF;
->>>>>>> ffffbdee1acb0b9e0240062818452866e6272d40
 }

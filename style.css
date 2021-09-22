@@ -7,14 +7,15 @@
   text-decoration: none;
 }
 
+
 .hamburger {
   /**background-color: red;**/
   width: 2rem;
   height: 2rem;
-  position: absolute;
+  position: fixed;
   z-index: 100;
-  left: 13%;
-  top: 12%;
+  right: 2rem;
+  top: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -30,6 +31,18 @@
   background-color: #00BBFF;
   height: .1rem;
   box-shadow: 0.1rem 0.1rem 1px #0ff;
+}
+
+
+.show-menu #line1 {
+  transform: rotate(45deg) translate(0.3rem, 0.45rem);
+}
+.show-menu #line2 {
+  opacity: 0;
+  visibility: hidden;
+}
+.show-menu #line3 {
+  transform: rotate(-45deg) translate(0.3rem, -0.45rem);
 }
 
 .header {
@@ -53,7 +66,6 @@
   font-family: 'Josefin Slab', serif;
 }
 @keyframes tilling {
-  /* 0%, 2%, 4%, 6%, 8%, 10%, 12%, 14%, 16%, 18%, 20%, 22%, 24%, 26%, 28%, 30% { */
 1.5%, 2%, 5%, 5.5%; {
     text-shadow:
    0 1px 1px #000,
@@ -64,8 +76,8 @@
    0 0 8px #0ff,
    0 1px 1px #000,
    0 0 5px #0ff;
-    }
-
+   }
+  
   32%, 34%, 36%, 38%, 40%, 42%, 44%, 46%, 48%{
     text-shadow:
       0 1px 5px #0ff,
@@ -76,9 +88,8 @@
       0 0 1px #000,
       0 1px 3px #0ff,
       0 0 1px #000;
+      }
   }
-}
-
 @media screen and (max-width: 768px) {
   .banner h1 {
     font-size: 1.5em;
@@ -136,9 +147,9 @@
 
 /** Aqui as barras**/
 
-.banner .barras {
+.banner barras {
   left: 3%;
-  width: 66vh%;
+  width: 66vw;
   height: 78vh;
   object-fit: cover;
   overflow: hidden;
@@ -235,4 +246,86 @@ menu-link:focus {
 	font-family:'Josefin Slab', serif;
 	font-size: 2rem;
 	color: #00BBFF;
+}
+
+.projetos{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+
+.img2 img{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  opacity: 25%;
+  overflow: hidden;
+}
+.card{
+  width: 18rem;
+  height: 25rem;
+  position: relative;
+}
+
+.card-img-wrapper{
+  width: 17rem;
+  height: 14rem;
+  background-color: #262626;
+  border-radius: 0.5rem;
+}
+
+.card-img-wrapper img{
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  opacity: 0.4;
+  transition: opacity 0.3s;
+}
+
+.card:hover .card-img-wrapper img {
+  opacity: 2;
+}
+
+.sessao-projetos h1{
+  text-align: center;
+  left: 45%;
+  color: #00BFFF;
+  font-size: 3.5rem;
+  font-weight: 350;
+  font-family: 'Josefin Slab', serif;
+  overflow: hidden;
+  text-shadow: 0.1rem 0.1rem 1.8rem #fff, 0.1rem 0.1rem 2rem #0ff;
+}
+.sessao-projetos{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.card-info h2 {
+  font-family: 'Josefin Slab', serif;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #00BBFF;
+  text-shadow: 0.1rem 0.1rem 1.8rem #fff, 0.1rem 0.1rem 2rem #0ff;
+}
+
+.card-info h3 {
+  font-family: 'Josefin Slab', serif;
+  font-weight: bolder;
+  color: #00BBFF;
+  margin-bottom: 1.5rem;
+  text-shadow: 0.1rem 0.1rem 1.8rem #fff, 0.1rem 0.1rem 2rem #0ff;
+}
+
+.card-info p {
+  font-family: 'Josefin Slab', serif;
+  color: #00BBFF;
+  font-weight: 400;
+  width: 102%;
+  margin-bottom: 2rem;
+  text-shadow: 0.1rem 0.1rem 1.8rem #fff, 0.1rem 0.1rem 2rem #0ff;
 }

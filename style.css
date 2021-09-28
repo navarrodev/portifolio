@@ -18,6 +18,7 @@ body{
 .container{
     display: inline-grid;
 }
+
 .hamburger {
   /**background-color: red;**/
   width: 2rem;
@@ -237,9 +238,9 @@ body{
 
 .menu {
   position: absolute;
-  /* top: 20%; */
+  top: 20%; 
   left: 20%;
-  transform: translate(50%, 50%);
+/*  transform: translate(50%, 50%);*/
 }
 
 .menu-item {
@@ -377,6 +378,7 @@ section {
 
 .img2 {
   width: 100%;
+  position: absolute;
   height: 100vh;
   object-fit: cover;
   overflow: hidden;
@@ -393,8 +395,13 @@ section {
 
 
 .item{
-margin-left: 4rem;
-margin-top: 10rem;
+background-color: #010c0c80;
+padding: 2rem;
+margin-top: 2rem;
+display: flex;
+align-items: center;
+flex-wrap: wrap;
+flex-direction: column;
 }
 
 .item img{
@@ -406,7 +413,7 @@ margin-top: 10rem;
 
 .item:hover {
     /* margin: 0 40px; */
-    transform: scale(1.2);
+    transform: scale(1.4);
       }
 
 
@@ -416,14 +423,16 @@ margin-top: 10rem;
         color: #00BBFF;
         font-size: 1rem;
         text-decoration: none;
-      }
+        text-shadow: 0.1rem 0.1rem 1.8rem #fff, 0.1rem 0.1rem 2rem #0ff;
+}
 
 .duration {
         position: relative;
         bottom: 0;
         color: #00BBFF;
         text-decoration: none;
-      }
+        text-shadow: 0.1rem 0.1rem 1.8rem #fff, 0.1rem 0.1rem 2rem #0ff;
+}
 
 .arrow__btn {
 position:absolute;

@@ -101,23 +101,11 @@ body{
       0 0 1px #000;
       }
   }
-@media screen and (max-width: 768px) {
-  .banner h1 {
-    font-size: 1.5em;
-    left: 22%;
-  }
 
-  .banner .barras {
-    left: 11%;
-  }
-}
 
-@media screen and (max-width: 768px) {
-  .hamburger {
-    left: 10%;
-    top: 10.5vh;
-  }
-}
+  
+
+
 
 @keyframes mov {
   0% {
@@ -202,7 +190,7 @@ body{
   left: 0;
   height: 100%;
   width: 0;
-  background-color: #34e8d7;
+  background-color: #60ddfdcc;
   transition: width 3s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
@@ -408,14 +396,16 @@ flex-direction: column;
     width: 20vw;
     height: auto;
     object-fit: fill;
-
+    filter: brightness(0.2);
 }
 
 .item:hover {
     /* margin: 0 40px; */
     transform: scale(1.4);
-      }
-
+  }
+  .item:hover img{
+    filter: brightness(1); 
+  }
 
 
 .heading {
@@ -460,13 +450,93 @@ cursor:pointer;
 
 }
 
-.slide2{
-    right: -20rem;
-}
-.slide1{
-    right: 0;
-}
 
-.slide-show .slide2{
-    right: 0;
+@media only screen and (max-width: 768px) {
+  .banner h1 {
+    font-size: 1.5em;
+    left: 22%;
+  }
+
+  .banner .barras {
+    left: 11%;
+  }
+
+  .hamburger {
+    top: 4.5vh;
+  }
+  section {
+    grid-template-columns: none;
+  }
+  .item {
+    padding: 0;
+    margin-top: 0;
+  }
+}
+@media only screen and (max-width: 640px) and (orientation: landscape){
+  .banner h1{
+    font-size: 1.5rem;
+  }
+
+  .skill-info{
+    font-size: 14px;
+    line-height: 0.2rem;
+  }
+  
+  .barras p{
+    font-size: smaller;
+  }
+  
+  .banner{
+    top: 2%;
+  }
+  
+  section {
+    grid-template-columns: repeat(3,auto);
+  }
+  
+  .heading {
+    font-size: 12px;
+  }
+  
+  .duration{
+    font-size: 12px;
+  }
+  
+  .item img{
+    margin: 15px;
+  }
+}
+@media only screen and (max-width: 812px) and (orientation: landscape){
+  .skill-info{
+    font-size: 14px;
+    line-height: 0.2rem;
+  }
+  
+  .barras p{
+    font-size: smaller;
+  }
+  
+  .banner{
+    top: -1%;
+  }  
+  
+  .banner h1{
+    font-size: 2rem;
+  }
+
+  section {
+    grid-template-columns: repeat(3,auto);
+  }
+  
+  .heading {
+    font-size: 12px;
+  }
+  
+  .duration{
+    font-size: 12px;
+  }
+  
+  .item img{
+    margin: 15px;
+  }
 }
